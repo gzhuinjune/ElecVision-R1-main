@@ -2,7 +2,7 @@
 
 ## 📢 Latest Update
 
-**2026.8.31:** We have uploaded the anonymous ElecVision-R1 code release for review, including the grounding reward and evaluation utilities, path-centric RAG modules, and local verification scripts. 
+**2026.8.31:** We have uploaded the anonymous ElecVision-R1 code release for review, including the grounding reward and evaluation utilities and path-centric RAG modules. 
 
 **2026.3.20:** We have open-sourced the **ElecInsp-QA-Mini dataset**, which is now available on Baidu Netdisk: https://pan.baidu.com/s/18e5R0wMXiJL_XgaIiinhmQ (access code: qsbj).
 
