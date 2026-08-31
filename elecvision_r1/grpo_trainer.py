@@ -7,7 +7,7 @@ from typing import Any, Mapping
 try:
     import torch
     import torch.nn.functional as F
-except Exception:  # pragma: no cover - training extras are optional for local checks.
+except Exception:  
     torch = None
     F = None
 
