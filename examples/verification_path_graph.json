@@ -1,0 +1,40 @@
+{
+  "nodes": {
+    "oil_conservator": {
+      "type": "equipment",
+      "description": "Oil conservator connected to transformer oil storage."
+    },
+    "sly_bjbmyw": {
+      "type": "defect",
+      "description": "Oil leakage visible on equipment surface or nearby component."
+    },
+    "pressure_gauge": {
+      "type": "equipment",
+      "description": "Gauge used for pressure or equipment condition monitoring."
+    },
+    "bj_bpps": {
+      "type": "defect",
+      "description": "Broken or damaged meter panel affecting reliable reading."
+    },
+    "oil_level_window": {
+      "type": "equipment",
+      "description": "Oil level observation window used for condition inspection."
+    },
+    "bjdsyc_ywc": {
+      "type": "defect",
+      "description": "Oil level window reading outside the normal operating range."
+    },
+    "maintenance_action": {
+      "type": "regulation",
+      "description": "Inspect sealing, clean contaminated surface, and schedule repair."
+    }
+  },
+  "edges": [
+    {"source": "oil_conservator", "target": "sly_bjbmyw", "relation": "may_exhibit", "weight": 1.0},
+    {"source": "sly_bjbmyw", "target": "maintenance_action", "relation": "requires", "weight": 0.9},
+    {"source": "pressure_gauge", "target": "bj_bpps", "relation": "may_exhibit", "weight": 0.9},
+    {"source": "bj_bpps", "target": "maintenance_action", "relation": "requires", "weight": 0.75},
+    {"source": "oil_level_window", "target": "bjdsyc_ywc", "relation": "may_exhibit", "weight": 0.95},
+    {"source": "bjdsyc_ywc", "target": "maintenance_action", "relation": "requires", "weight": 0.8}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "purpose": "local_interface_verification",
+  "note": "The report summarizes released code paths and does not display case-level images, completions, or annotations.",
+  "evaluation": {
+    "status": "completed",
+    "metric_family": "COCO-style mAP",
+    "iou_range": "0.50:0.95",
+    "values_displayed": false
+  },
+  "grpo": {
+    "reward_scoring": "completed",
+    "group_relative_advantage": "completed",
+    "clipped_objective": "implemented",
+    "kl_regularization": "implemented",
+    "optimizer_update": "tested"
+  },
+  "rag": {
+    "node_retrieval": "completed",
+    "path_retrieval": "completed",
+    "flow_pruning": "completed",
+    "path_linearization": "completed",
+    "stages": [
+      "node_retrieval",
+      "path_retrieval",
+      "flow_pruning",
+      "path_linearization"
+    ]
+  },
+  "prompt": {
+    "structured_prompt": "completed",
+    "taxonomy_constraint": "completed",
+    "rag_context_injection": "completed"
+  }
+}
