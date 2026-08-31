@@ -1,4 +1,4 @@
-# ElecVision-R1: A Multimodal LLM-Based Framework for Image Anomaly Detection and Quality Diagnosis in Power Systems
+# ElecVision-R1: A Multimodal Large-language-model-based Framework for Image Anomaly Detection and Quality Diagnosis in Power Systems
 
 ## 📢 Latest Update
 
